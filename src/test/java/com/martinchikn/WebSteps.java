@@ -45,8 +45,8 @@ public class WebSteps {
         }
 
         @Step("Checking for Issue No. {number}")
-        public void checkIssueNumber(int issueNumber) {
-            $(withText("#" + issueNumber)).shouldBe(Condition.visible);
+        public void checkIssueNumber(int number) {
+            $(withText("#" + number)).shouldBe(Condition.visible);
             attachScreenshot();
         }
 
